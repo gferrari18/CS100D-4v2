@@ -69,9 +69,4 @@ def login(user):
     return jsonify({'user': user, 'user count':usercount, 'total count':totalcount })
 
 if __name__ == '__main__':
-    app.run()
-
-
-
-
-    
+    app.run(host='0.0.0.0', port=5000)
